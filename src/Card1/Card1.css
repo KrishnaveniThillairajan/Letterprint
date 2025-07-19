@@ -1,0 +1,95 @@
+/* .fl-card-body{
+    box-sizing: border-box;
+    background-color:aliceblue;
+      margin:10px; 
+      padding:0px;
+    } */
+        .fl-card-list{
+      margin:2rem 0 2rem 0;
+      display:flex; 
+      flex-flow:row wrap; 
+      gap: 2rem 1rem;
+      justify-content:center;
+      max-width:1500px;
+    }
+    
+    .fl-card-list figure{
+      padding:5px;
+      margin:0px;
+    }
+    
+    .fl-card-list figcaption{
+      text-align:center; 
+      font-size:small;
+    }    
+    .fl-card-list .fl-card{
+      flex:0 1 80vw;
+      overflow:hidden;
+      display:flex; 
+      flex-direction:column;
+      border:1px solid black;
+      border: radius 10px;
+
+    }
+    
+    .fl-card-list .fl-card .fl-card-body{
+      padding:1.25rem; 
+      flex: 1 2 auto;
+    
+    }
+    
+    .fl-card-list .fl-card .fl-card-body p{
+      color: black;  
+    }
+    
+    .fl-card-list .fl-card img{
+      width:70vw;
+      border-radius:10px 10px 0px 0px;
+    }
+    
+    
+    /* Medium screens*/
+    @media only screen and (min-width: 40.063em) {
+      .fl-card-list .fl-card{
+      flex:0 1 45vw;
+      overflow:hidden;
+      display:flex; 
+      flex-direction:column;
+      border:3px solid rgb(18, 17, 17);
+      border-radius:40px;
+     } 
+      
+      .fl-card-list .fl-card img{
+      width:45vw;
+      border-radius:5px 10px 0px 0px;
+    }
+      
+      
+      
+      
+    } /* min-width 641px, medium screens */
+    
+    
+    /* Large screens*/
+    @media only screen and (min-width: 64.063em) { 
+     .fl-card-list .fl-card{
+      flex:0 5 25vw;
+      height: 500px;
+      overflow:hidden;
+      display:flex; 
+      flex-direction:column;
+      border:1px solid black;
+      border-radius:10px;
+     } 
+      
+      .fl-card-list .fl-card img{
+      width:30vw;
+      border-radius:10px 10px 0px 0px;
+    }
+       
+    } /* min-width 1025px, large screens */
+    
+    
+    
+    
+    

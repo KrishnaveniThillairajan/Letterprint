@@ -1,0 +1,45 @@
+.navebar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.logo {
+/*   cursor: pointer; */
+/*   background-color: #FFEA11; */
+  margin-left: 5px;
+}
+
+.navebar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px; 
+   /*padding: 0 20px; */
+    position: relative; 
+
+}
+
+.navebar ul li a {
+    text-decoration: none;
+    color: black;
+    font-size:20px;
+    text-transform: capitalize;
+}
+
+.navebar ul li::after{
+    content: '';
+    height: 2px;
+    width: 0; /*100% */
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.navebar ul li:hover::after{
+    width: 100%;
+}
